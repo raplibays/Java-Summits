@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    background: url('Gunung/gunung.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay gelap tambahan */
+    z-index: 0;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Memastikan konten berada di atas overlay */
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 1; /* Memastikan navbar berada di atas overlay */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Menambahkan warna putih untuk logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna putih untuk link di navbar */
+    font-size: 18px;
+}
+
+main {
+    text-align: center;
+}
+
+main section {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #a4be7b;
+}
+
+main section p {
+    font-size: 18px;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+}
+
+.card {
+    min-width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #5f8d4e;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #A4Be7B;
+}
+
+/* Untuk layout section About Us */
+#about {
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5f8d4e;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #A4Be7B;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#team {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-content {
+    padding: 20px;
+}
+
+.team-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5f8d4e;
+}
+
+.team-content p {
+    font-size: 16px;
+    color: #A4Be7B;
+}
+footer {
+    background-color: #A4Be7B;
+    color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-left h4,
+.footer-center h4,
+.footer-right h4 {
+    margin-bottom: 10px;
+}
+
+/* CSS tambahan untuk ikon media sosial atau daftar anggota tim */
