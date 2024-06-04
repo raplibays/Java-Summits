@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javasummit</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="index-header">
         <div class="navbar">
             <div class="logo">JavaSummit</div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#gunung">Gunung</a></li>
+                    <li><a href="gunung.html">Gunung</a></li>
                     <li><a href="#about">About Us</a></li>
                 </ul>
             </nav>
@@ -28,24 +29,27 @@
             <div class="slider-container">
                 <div class="card-slider">
                     <div class="card">
-                        <img src="../Assets/arjuno.jpg" alt="Image 1">
+                        <img src="Gunung/arjuno.jpg" alt="Image 1">
                         <div class="card-content">
                             <h3>Gunung Arjuno</h3>
                             <p>Gunung di Jawa Timur yang memiliki beberapa basecamp nyaman.</p>
+                            <a href="./gunung.html" class="read-more">Lihat Selengkapnya</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="../Assets/prau.jpg" alt="Image 2">
+                        <img src="Gunung/prau.jpg" alt="Image 2">
                         <div class="card-content">
                             <h3>Gunung Prau</h3>
                             <p>Gunung di Jawa Timur yang memiliki beberapa basecamp nyaman.</p>
+                            <a href="./gunung.html" class="read-more">Lihat Selengkapnya</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="../Assets/sindoro.jpeg" alt="Image 3">
+                        <img src="Gunung/sindoro.jpeg" alt="Image 3">
                         <div class="card-content">
                             <h3>Gunung Sindoro</h3>
                             <p>Gunung di Jawa Timur yang memiliki beberapa basecamp nyaman.</p>
+                            <a href="./gunung.html" class="read-more">Lihat Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -58,36 +62,83 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris consectetur lorem, eu varius odio ligula non lorem.</p>
                 </div>
                 <div class="about-image">
-                    <img src="../Assets/gunung.jpg" alt="About Us Image">
+                    <img src="Gunung/gunung.jpg" alt="About Us Image">
                 </div>
             </div>
         </section>
-        <section id="team">
-            <h2>Our Team</h2>
+        <section class="articles-section">
+            <h1>New Article</h1>
+            <div class="articles-container">
+                <article class="article-card">
+                    <img src="gunung/tips.jpg" alt="Article Image 1" class="article-image">
+                    <div class="article-content">
+                        <h2>Tips Mendaki Gunung Untuk Pemula</h2>
+                        <p>Ini adalah ringkasan singkat dari artikel pertama. Ini memberikan gambaran tentang isi artikel.</p>
+                        <a href="https://eraspace.com/artikel/post/7-tips-mendaki-gunung-bagi-pemula-yang-baru-mencoba" class="read-more" target="_blank">Baca Selengkapnya</a>
+
+                    </div>
+                </article>
+                <article class="article-card">
+                    <img src="gunung/tips.jpg" alt="Article Image 2" class="article-image">
+                    <div class="article-content">
+                        <h2>Judul Artikel 2</h2>
+                        <p>Ini adalah ringkasan singkat dari artikel kedua. Ini memberikan gambaran tentang isi artikel.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <img src="gunung/tips.jpg" alt="Article Image 3" class="article-image">
+                    <div class="article-content">
+                        <h2>Judul Artikel 3</h2>
+                        <p>Ini adalah ringkasan singkat dari artikel ketiga. Ini memberikan gambaran tentang isi artikel.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="team-section">
+            <h1>Our Team</h1>
+            <p class="subtitle">Giardia for habitant morbi tristique senectus et netus et malesuada fames</p>
             <div class="team-container">
-                <div class="team-card">
-                    <img src="" alt="Team Member 1">
-                    <div class="team-content">
-                        <h3>Ajeng</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Jeffrey Brown" class="member-photo">
+                    <h2>Ajeng Soumiatun</h2>
+                    <p class="role">Frontend & Backend Developer</p>
+                    <p class="description">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet ipsum lorem bibendum</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="team-card">
-                    <img src="" alt="Team Member 2">
-                    <div class="team-content">
-                        <h3>Rafli</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Ann Richmond" class="member-photo">
+                    <h2>Rafli </h2>
+                    <p class="role">Leader & Backend Developer</p>
+                    <p class="description">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet ipsum lorem bibendum</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="team-card">
-                    <img src="" alt="Team Member 3">
-                    <div class="team-content">
-                        <h3>Nova Sukmawati</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Alex Greenfield" class="member-photo">
+                    <h2>Nova Sukmawati</h2>
+                    <p class="role">Designer & Frontend Developer</p>
+                    <p class="description">Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet ipsum lorem bibendum</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="footer-left">
@@ -107,5 +158,6 @@
             <p>Nova Sukmawati</p>
         </div>
     </footer>
+    
 </body>
 </html>
